@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Train Ticket Project</string>
+    <string name="detail_page_intro">Train Details</string>
+    <string name="departure_station">Departure Station:</string>
+    <string name="arrival_station">Arrival Station:</string>
+    <string name="from">From:</string>
+    <string name="to">to:</string>
+    <string name="departure_date">Departure Date:</string>
+    <string name="price">Price:</string>
+    <string name="available_seat">Available seats:</string>
+    <string name="trip">Trip:</string>
+    <string name="ticket_id">Ticket ID:</string>
+    <string name="time">Time:</string>
+    <string name="customer">Customer:</string>
+    <string name="seat_number">Seat Number:</string>
+    <string name="share">Share</string>
+    <string name="list_of_available_vouchers">LIST OF AVAILABLE VOUCHERS</string>
+    <string name="list_of_trains">LIST OF TRAINS:</string>
+    <string name="my_ticket">My Ticket</string>
+    <string name="my_tickets">My Tickets:</string>
+    <string name="purchase_date">Purchase Date:</string>
+    <string name="seat">Seat:</string>
+    <string name="all_vouchers">All Vouchers</string>
+    <string name="my_vouchers">My Vouchers</string>
+    <string name="my_account">My Account</string>
+</resources>

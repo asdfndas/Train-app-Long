@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".uis.Train.TrainDetailInfoActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerVIewMap"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvIntro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imgBtnShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:contentDescription="@string/share"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:src="@drawable/baseline_share_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerVIewMap" />
+
+    <TextView
+        android:id="@+id/tvIntro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="328dp"
+        android:text="@string/detail_page_intro"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTrip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="Ho Chi Minh - Ha Noi"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/lblTrip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/lblTrip"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/lblArrivalStation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/arrival_station"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/lblDepartureStation"
+        app:layout_constraintTop_toBottomOf="@+id/lblDepartureStation" />
+
+    <TextView
+        android:id="@+id/tvDepartureDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saturday, Dec 12th"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/lblDepartureDate"
+        app:layout_constraintEnd_toEndOf="@+id/tvTotalTime"
+        app:layout_constraintTop_toTopOf="@+id/lblDepartureDate"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tvSeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10/45"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/lblSeat"
+        app:layout_constraintEnd_toEndOf="@+id/tvPrice"
+        app:layout_constraintTop_toTopOf="@+id/lblSeat"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/lblDepartureTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/from"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/lblArrivalStation"
+        app:layout_constraintTop_toBottomOf="@+id/lblArrivalStation" />
+
+    <TextView
+        android:id="@+id/tvDepartureStation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ho Chi Minh GAS STATION"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/lblDepartureStation"
+        app:layout_constraintEnd_toEndOf="@+id/tvTrip"
+        app:layout_constraintTop_toTopOf="@+id/lblDepartureStation"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/lblDepartureStation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/departure_station"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/lblTrip"
+        app:layout_constraintTop_toBottomOf="@+id/lblTrip" />
+
+    <TextView
+        android:id="@+id/tvArrivalStation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ha Noi GAS STATION"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/lblArrivalStation"
+        app:layout_constraintEnd_toEndOf="@+id/tvDepartureStation"
+        app:layout_constraintTop_toTopOf="@+id/lblArrivalStation"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tvPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="200,000 VND"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/lblPrice"
+        app:layout_constraintEnd_toEndOf="@+id/tvDepartureDate"
+        app:layout_constraintTop_toTopOf="@+id/lblPrice"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/lblSeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/available_seat"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/lblPrice"
+        app:layout_constraintTop_toBottomOf="@+id/lblPrice" />
+
+    <TextView
+        android:id="@+id/lblPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/price"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/lblDepartureDate"
+        app:layout_constraintTop_toBottomOf="@+id/lblDepartureDate" />
+
+    <TextView
+        android:id="@+id/tvDepartureTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="10:20"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/lblDepartureTime"
+        app:layout_constraintStart_toEndOf="@+id/lblDepartureTime"
+        app:layout_constraintTop_toTopOf="@+id/lblDepartureTime"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/lblTrip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/trip"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvIntro" />
+
+    <TextView
+        android:id="@+id/lblArrivalTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:text="@string/to"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/lblDepartureTime"
+        app:layout_constraintStart_toEndOf="@+id/lblDepartureTime"
+        app:layout_constraintTop_toTopOf="@+id/lblDepartureTime" />
+
+    <TextView
+        android:id="@+id/tvArrivalTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="20:30"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/lblArrivalTime"
+        app:layout_constraintStart_toEndOf="@+id/lblArrivalTime"
+        app:layout_constraintTop_toTopOf="@+id/lblArrivalTime"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tvTotalTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="10 hours and 10 mins"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvArrivalTime"
+        app:layout_constraintEnd_toEndOf="@+id/tvArrivalStation"
+        app:layout_constraintHorizontal_bias="0.923"
+        app:layout_constraintStart_toEndOf="@+id/tvArrivalTime"
+        app:layout_constraintTop_toTopOf="@+id/tvArrivalTime"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/lblDepartureDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/departure_date"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/lblDepartureTime"
+        app:layout_constraintTop_toBottomOf="@+id/lblDepartureTime" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

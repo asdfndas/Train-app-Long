@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvTicketTrip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="HO CHI MINH - HA NOI"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblPurchaseDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/purchase_date"
+        app:layout_constraintStart_toStartOf="@+id/tvTicketTrip"
+        app:layout_constraintTop_toBottomOf="@+id/tvTicketTrip" />
+
+    <TextView
+        android:id="@+id/tvTicketPurchasedDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="19:00 Mon, 19th Nov 2023"
+        app:layout_constraintBottom_toBottomOf="@+id/lblPurchaseDate"
+        app:layout_constraintStart_toEndOf="@+id/lblPurchaseDate"
+        app:layout_constraintTop_toTopOf="@+id/lblPurchaseDate"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/lblSeatNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/seat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/lblPurchaseDate"
+        app:layout_constraintTop_toBottomOf="@+id/lblPurchaseDate" />
+
+    <TextView
+        android:id="@+id/tvTicketSeatNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="1"
+        app:layout_constraintStart_toEndOf="@+id/lblSeatNumber"
+        app:layout_constraintTop_toTopOf="@+id/lblSeatNumber" />
+
+    <TextView
+        android:id="@+id/lblTicketPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="@string/price"
+        app:layout_constraintStart_toEndOf="@+id/tvTicketSeatNumber"
+        app:layout_constraintTop_toTopOf="@+id/tvTicketSeatNumber" />
+
+    <TextView
+        android:id="@+id/tvTicketPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="200,000"
+        app:layout_constraintStart_toEndOf="@+id/lblTicketPrice"
+        app:layout_constraintTop_toTopOf="@+id/lblTicketPrice" />
+</androidx.constraintlayout.widget.ConstraintLayout>
